@@ -1,0 +1,6 @@
+.bird {
+    position: absolute;
+    background-image: url("../public/yellowbird-upflap.png");
+    background-repeat: no-repeat;
+    background-size: var(--bird-width) var(--bird-height);
+  }

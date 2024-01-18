@@ -1,10 +1,12 @@
-import styled from 'styled-components';
+import React from 'react';
+import './Home.css';
 
-const Home = styled.div`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const Home = ({ children, onClick }) => {
+  return (
+    <div className="home" onClick={onClick}>
+      {children}
+    </div>
+  );
+};
 
 export default Home;

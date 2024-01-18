@@ -1,0 +1,19 @@
+/* src/components/Startboard.css */
+.startboard-container {
+    position: relative;
+    top: 49%;
+    text-align: center;
+  }
+  
+  .startboard {
+    background-color: black;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+  }
+  

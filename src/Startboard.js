@@ -1,18 +1,15 @@
-import styled from 'styled-components';
+// src/components/Startboard.js
+import React from 'react';
+import './Startboard.css'; // Import the CSS file
 
-const Startboard = styled.div`
-  position: relative;
-  top: 49%;
-  background-color: black;
-  padding: 10px;
-  width: 100px;
-  left: 50%;
-  margin-left: -50px;
-  text-align: center;
-  font-size: 20px;
-  border-radius: 10px;
-  color: #fff;
-  font-weight: 600;
-`;
+const Startboard = ({ children }) => {
+  return (
+    <div className="startboard-container">
+      <div className="startboard">
+        {children}
+      </div>
+    </div>
+  );
+};
 
 export default Startboard;

@@ -9,7 +9,7 @@ import './App.css';
 const BIRD_HEIGHT = 28;
 const BIRD_WIDTH = 33;
 const WALL_HEIGHT = 600;
-const WALL_WIDTH = 400;
+const WALL_WIDTH = 1000;
 const GRAVITY = 8;
 const OBJ_WIDTH = 52;
 const OBJ_SPEED = 6;
