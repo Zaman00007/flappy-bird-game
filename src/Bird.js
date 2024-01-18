@@ -1,35 +1,20 @@
+// src/components/Bird.js
 import React from 'react';
-import { useLoader } from '@react-three/fiber';
-import { TextureLoader } from 'three';
+import styled from 'styled-components';
 
-const Bird = () => {
-  const texture = useLoader(TextureLoader, './assets/sprites/bluebird-downflap.png');
-
-  return (
-    <mesh position={[0, 0, 0]}>
-      {/* Body */}
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial map={texture} />
-
-      {/* Head */}
-      <mesh position={[1.5, 0, 0]}>
-        <sphereGeometry args={[0.5, 32, 32]} />
-        <meshStandardMaterial map={texture} />
-      </mesh>
-
-      {/* Wings */}
-      <mesh position={[-0.5, 0, 0]}>
-        <boxGeometry args={[0.1, 0.8, 1]} />
-        <meshStandardMaterial map={texture} />
-      </mesh>
-
-      {/* Tail */}
-      <mesh position={[-0.7, 0, 0]}>
-        <boxGeometry args={[0.1, 0.5, 0.5]} />
-        <meshStandardMaterial map={texture} />
-      </mesh>
-    </mesh>
-  );
+const Bird = ({ height, width, top, left }) => {
+  return <StyledBird height={height} width={width} top={top} left={left} />;
 };
+
+const StyledBird = styled.div`
+  position: absolute;
+  background-image: url("./yellowbird-upflap.png");
+  background-repeat: no-repeat;
+  background-size: ${(props) => props.width}px ${(props) => props.height}px;
+  width: ${(props) => props.width}px;
+  height: ${(props) => props.height}px;
+  top: ${(props) => props.top}px;
+  left: ${(props) => props.left}px;
+`;
 
 export default Bird;
