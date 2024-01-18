@@ -1,11 +1,12 @@
-import styled from 'styled-components';
+import React from 'react';
+import './Background.css';
 
-const Background = styled.div`
-  width: ${(props) => props.width}px;
-  height: ${(props) => props.height}px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid black;
-`;
+const Background = ({ children, width, height }) => {
+  return (
+    <div className="Background" style={{ width, height }}>
+      {children}
+    </div>
+  );
+};
 
 export default Background;

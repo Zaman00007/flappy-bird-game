@@ -1,5 +1,16 @@
-.background {
+.back {
     position: relative;
     overflow: hidden;
     border: 2px solid black;
   }
+
+  .Background {
+    background-image: url("../public/background-day.png");
+    background-repeat: no-repeat;
+    background-size: 1000px 600px;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+}

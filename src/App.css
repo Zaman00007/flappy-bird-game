@@ -10,16 +10,6 @@ body {
   align-items: center;
 }
 
-.Background {
-  background-image: url("../public/background-day.png");
-  background-repeat: no-repeat;
-  background-size: 1000px 600px;
-  width: 1000px;
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid black;
-}
 
 .Startboard {
   position: relative;
@@ -34,4 +24,13 @@ body {
   border-radius: 10px;
   color: #fff;
   font-weight: 600;
+}
+
+span {
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  color: #333; 
 }

@@ -1,6 +1,5 @@
-// src/components/Startboard.js
 import React from 'react';
-import './Startboard.css'; // Import the CSS file
+import './Startboard.css'; 
 
 const Startboard = ({ children }) => {
   return (
